@@ -1,6 +1,7 @@
 package com.example.movieApp.presantation.component.bottom_bar
 
 import android.annotation.SuppressLint
+import androidx.compose.foundation.layout.size
 import androidx.compose.material.BottomNavigation
 import androidx.compose.material.BottomNavigationItem
 import androidx.compose.material3.Icon
@@ -9,8 +10,10 @@ import androidx.compose.material3.Scaffold
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.getValue
+import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.res.painterResource
+import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import androidx.navigation.NavController
 import androidx.navigation.compose.currentBackStackEntryAsState
@@ -39,6 +42,7 @@ fun BottomBar(
                 },
                 icon = {
                     Icon(
+                        modifier = Modifier.size(25.dp),
                         painter = painterResource(id = items.selectedItem),
                         contentDescription = null,
                     )

@@ -22,7 +22,7 @@ sealed class BottomItem(
 
     data object SaveScreen : BottomItem(
         "Save",
-        R.drawable.save,
+        R.drawable.favorite,
         "SaveScreen"
     )
 }
