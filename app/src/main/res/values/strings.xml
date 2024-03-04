@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Movies</string>
+    <string name="text_first">Popular\n</string>
+    <string name="text_sacond">Now Playing\n</string>
+    <string name="text_third">Top Reated\n</string>
+    <string name="text_gour">Up Caming\n</string>
+    <string name="text_first_tt">What do you wont to watch?</string>
+    <string name="text_search">Search</string>
+</resources>
