@@ -18,7 +18,7 @@ interface MovieService {
     @GET(GET_TOP_RATED)
     suspend fun getMovieTopRated(
         @Query("api_key") apiKey: String = API_KAY,
-        @Query("language") language: String = "ru",
+        @Query("language") language: String = "en",
     ): Response<MovieModelResults>
 
     @GET(FETCH_MOVIE_INFO)
@@ -29,19 +29,19 @@ interface MovieService {
     @GET(GET_POPULAR)
     suspend fun getMoviePopular(
         @Query("api_key") apiKey: String = API_KAY,
-        @Query("language") language: String = "ru",
+        @Query("language") language: String = "en",
     ): Response<MovieModelResults>
 
 
     @GET(GET_NOW_PLAYING)
     suspend fun getMovieNowPlaying(
         @Query("api_key") apiKey: String = API_KAY,
-        @Query("language") language: String = "ru",
+        @Query("language") language: String = "en",
     ): Response<MovieModelResults>
 
     @GET(GET_UPCOMING)
     suspend fun getMovieUpcoming(
         @Query("api_key") apiKey: String = API_KAY,
-        @Query("language") language: String = "ru",
+        @Query("language") language: String = "en",
     ): Response<MovieModelResults>
 }

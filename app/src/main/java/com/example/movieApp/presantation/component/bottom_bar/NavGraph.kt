@@ -20,7 +20,7 @@ fun NavGraph(
 ) {
     NavHost(
         navController = navHostController,
-        startDestination = Screens.HomeScreen.route,
+        startDestination = BottomItem.HomeScreen.route,
     ) {
         composable(BottomItem.HomeScreen.route) {
             val viewModel: MainScreenViewModel = hiltViewModel()

@@ -3,7 +3,9 @@ package com.example.movieApp.domain.models.movie_domain_model
 import com.example.movieApp.data.models.movie_model.MovieModel
 import com.example.movieApp.data.utils.Constants
 import java.io.Serializable
+import javax.annotation.concurrent.Immutable
 
+@Immutable
 data class MovieDomainModel(
     val movieAbult: Boolean,
     val movieBackdrop: String,
